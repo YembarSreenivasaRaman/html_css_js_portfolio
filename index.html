@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sreenivasa Raman Yembar</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sreenivasa Raman Yembar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile-pic.png" alt="sreenivasa raman yembar proflie picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sreenivasa Raman Yembar</h1>
+            <p class="section__text__p2">Master Student at Central Michigan University</p>
+            <div class="btn-container">
+                <button class=" btn btn-color-2" onclick="window.open('./assests/resume.docx')">Download CV</button>
+                <button class=" btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assests/linkedin.png" alt="My linkedin Profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/sreenivasa-raman-yembar-yembar-231632288/'" >
+                <img src="./assests/github.png" alt="My Github Profile" 
+                class="icon" onclick="location.href='https://github.com/YembarSreenivasaRaman?'" >
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assests/about-pic.jpg" alt="profile picture" class="about-pic">
+            </div>
+            <div class=""about-details-container>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="Experience icon" class="icon">
+                        <h3>Projects</h3>
+                        <p> <br>Automation of Timetable Generation</p>
+                        <p> <br>Student Result Analysis & Management</p>
+                        <p> <br>Blog Application Development</p>
+                        <p> <br>Random Quote Generator</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" alt="Education icon" class="icon">
+                        <h3>Education </h3>
+                        <p>MS in Information Systems
+                            <br>B.Tech in Computer Science </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>My academic journey led me to pursuing a Master's degree 
+                        in Information Systems from Central Michigan University. A significant part of my academic experience
+                        was to develop an Automation academic timetable and Student result evaluation 
+                        analysis and management both using python with Django framework in my under graduation studies. 
+                        In addition to this I have also gained interest in Generative AI and Data analytics during my master’s 
+                        journey and have completed certification courses in Generative AI and Data Analytics from Microsoft 
+                        company with LinkedIn Learning.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon " class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+            <h2 class="experience-sub-title">Frontend / Backend</h2>
+            <div class="article-container">
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assests/checkmark.png"   
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Django</h3>
+                    <p>Intermediate</p>
+                </div>
+                </article>
+            </div>
+            </div>
+            <div class="details-container">
+            <h2 class="experience-sub-title">Additional Skills</h2>
+            <div class="article-container">
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Data Analysis</h3>
+                    <p>Basic</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Generative AI</h3>
+                    <p>Basic</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Search Engine Technology</h3>
+                    <p>Basic</p>
+                </div>
+                </article>
+            </div>
+            </div>
+        </div>
+        </div>
+        <img
+        src="./assests/arrow.png    "
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/timetable.png"
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/YembarSreenivasaRaman/timetablegeneration'"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/result.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/YembarSreenivasaRaman/studentresultanalysisandmanagement'"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/quote.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/YembarSreenivasaRaman/Random_Quote_Generator'"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#hobbies'"
+        />
+    </section>
+
+    <section id="hobbies">
+        <p class="section__text__p1">Browse My Hobbies</p>
+        <h1 class="title">Hobbies</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/eye.png"
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/hulk.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/peacock.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+        </div>
+        </div>
+        <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#hobbies2'"
+        />
+    </section>
+    <section id="hobbies2">  
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/ms.png"
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/money .png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/god.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+        </div>
+        </div>
+        <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#hobbies3'"
+        />
+    </section>
+    <section id="hobbies3">  
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/dog.png"
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/joker.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assests/hunuman.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            </div>
+
+        </div>
+        </div>
+        <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" 
+                alt="Email Icon" 
+                class="icon contact-icon email-icon"/>
+                <p><a href="mailto:exampleemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.png" 
+                alt="Linkedin Icon" 
+                class="icon linkedin-icon"/>
+                <p><a href="https://www.linkedin.com/profile">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>copyright &#169; 2023 Yembar Sreenivasa Raman. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
